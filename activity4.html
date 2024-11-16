@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 4</title>
+    <link rel="stylesheet" href="activity4.css">
+  </head>
+  <body>
+
+    <section class="banner">
+      <h1>
+        Activity 4: Combined Operators Questions using Javascript
+      </h1>
+      <hr>
+      <h2>
+        Instruction: Kindly read each number and show your code and output per questions.
+      </h2>
+      <p>
+        <br>
+      </p>
+    </section>
+
+    <!-- Question 1 -->  
+    <section class="question">
+      <h1>
+        1. Calculating Total Cost
+      </h1>
+      <hr>
+      <h2>
+        If the itemPrice is 50 and quantity is 3, what is the value of totalCost after calculating itemPrice * quantity? Show your calculation.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var itemPrice = 50;
+        var quantity = 3;
+        var totalCost = itemPrice * quantity;
+        document.write("> Item Price: " + itemPrice + "<br>");
+        document.write("> Item Quantity: " + quantity + "<br><br>");
+        document.write("Calculation: " + itemPrice + ' X ' + quantity + ' = ' + totalCost + "<br><br>");
+        document.write("<b> Total Cost: </b>"+ totalCost);
+      </script>
+    </section>
+
+    <!-- Question 2 -->  
+    <section class="question">
+      <h1>
+        2. Score Adjustment
+      </h1>
+      <hr>
+      <h2>
+        Starting with a score of 85, if you receive a bonus of 15 points and then lose 5 points,
+        what is the final value of finalScore? How did you arrive at this number?      
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var score = 85;
+        var bonus = 15;
+        var deduction = 5;
+        var finalScore = (score + bonus) - deduction;
+        document.write("> Score: " + score + "<br>");
+        document.write("> Bonus: " + bonus + "<br>");
+        document.write("> Deduction: " + deduction + "<br><br>");
+        document.write("Calculation: " + score + ' + ' + bonus + ' - ' + deduction + ' = ' + finalScore + "<br><br>");
+        document.write("<b> Final Score: </b>"+ finalScore);
+      </script>
+    </section>
+    
+    <!-- Question 3 -->  
+    <section class="question">
+      <h1>
+        3. Temperature Conversion
+      </h1>
+      <hr>
+      <h2>
+        Given that the temperature is 30 degrees Celsius, what is the equivalent temperature in
+        Fahrenheit using the formula (Celsius * 9/5) + 32? Calculate and provide the result.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var celcius = 30;
+        var fahrenheit = (celcius * 9/5) + 32;
+        document.write("> Temperature in Celcius: " + celcius + "<br><br>");
+        document.write("Calculation: " + celcius + " X 9/5 + 32" + ' = ' + fahrenheit + "<br><br>");
+        document.write("<b> Fahrenheit : </b>"+ fahrenheit);
+      </script>
+    </section>
+
+    <!-- Question 4 -->  
+    <section class="question">
+      <h1>
+        4. Inventory Management
+      </h1>
+      <hr>
+      <h2>
+        If you start with itemsInStock = 50, sell 15 items, and then restock with 20 items, what
+        will your final itemsInStock be? Show your calculations step-by-step.      
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var itemsInStock = 50;
+        var sold = 15;
+        var restock = 20;
+        var finalItemsInStock = (itemsInStock - sold) + restock;
+        document.write("> Items in Stock: " + itemsInStock + "<br>");
+        document.write("> Items Sold: " + sold + "<br>");
+        document.write("> Items Restock: " + restock + "<br><br>");
+        document.write("Calculation: " + itemsInStock + ' - ' + sold + ' + ' + restock + ' = ' + finalItemsInStock + "<br><br>");
+        document.write("<b> Final Items in Stock : </b>"+ finalItemsInStock);
+      </script>
+    </section>
+
+    <!-- Question 5 -->  
+    <section class="question">
+      <h1>
+        5. Age Comparison
+      </h1>
+      <hr>
+      <h2>
+        If your age is 17, what message will be logged when checking if you are at least 18 years
+        old? Explain why that message is logged.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var age = 17;
+        document.write("> Current Age: " + age + "<br><br>");
+        if (age >= 18) {
+          document.write("Message: You are at least 18 years old.");
+        } else {
+          document.write("<b> Message: You are under 18 years old.</b>" + "<br><br>");
+        }
+        document.write("<i> Explanation: If your age is 17 and you check if you're at least 18, the condition age >= 18 will be false. Since the condition fails, the message (You are under 18 years old.) will be logged. </i>");
+      </script>
+    </section>
+
+    <!-- Question 6 -->  
+    <section class="question">
+      <h1>
+        6. Investment Growth with Monthly Contributions
+      </h1>
+      <hr>
+      <h2>
+        You start with an investment of $5000. Each month, you contribute an additional $300.
+        If your investment grows at an annual interest rate of 6%, compounded monthly, what
+        will your total balance be after 5 years? Provide the calculations for the interest accrued
+        and total contributions.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        let principal = 5000;  
+        let monthlyContribution = 300;  
+        let interestRate = 0.06;  
+        let months = 12 * 5;  
+        let futureValuePrincipal = principal * Math.pow(1 + interestRate / 12, months);
+        let futureValueContributions = monthlyContribution * ((Math.pow(1 + interestRate / 12, months) - 1) / (interestRate / 12));
+        let totalFutureValue = futureValuePrincipal + futureValueContributions;
+        let interestAccrued = futureValuePrincipal - principal;
+        let totalContributions = monthlyContribution * months;
+        document.write(`<b> Total Balance After 5 years: </b>$${futureValuePrincipal.toFixed(2)} (Principal Growth) + $${futureValueContributions.toFixed(2)} (Monthly Contributions) = $${totalFutureValue.toFixed(2)}<br>`);
+        document.write(`<b> Interest Accrued: </b>$${futureValuePrincipal.toFixed(2)} (Principal Growth) - $${principal} (Initial Investment) = $${interestAccrued.toFixed(2)}<br>`);
+        document.write(`<b> Total Contributions: </b>$${monthlyContribution} (Monthly Contributions) * ${months} (Months) = $${totalContributions.toFixed(2)}<br>`);
+      </script>
+    </section>
+
+    <!-- Question 7 -->  
+    <section class="question">
+      <h1>
+        7. Distance Traveled with Varying Speeds
+      </h1>
+      <hr>
+      <h2>
+        A cyclist travels at a speed of 20 km/h for the first 2 hours, then increases their speed to
+        25 km/h for the next 1.5 hours. After that, they take a 30-minute break. Finally, they
+        ride at a speed of 15 km/h for the remaining distance of 10 km. Calculate the total
+        distance traveled and total time spent on the journey.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var speed_1 = 20;
+        var time_1 = 2;
+        var distance_1 = speed_1 * time_1;
+        var speed_2 = 25;
+        var time_2 = 1.5;
+        var distance_2 = speed_2 * time_2;
+        var breakTime = 30 / 60;
+        var speed_3 = 15;
+        var distance_3 = 10;
+        var time_3 = distance_3 / speed_3;
+        var total_distance = distance_1 + distance_2 + distance_3;
+        var total_time = time_1 + time_2 + breakTime + time_3;
+
+        document.write("<b> Distance Formula: </b> Speed X Time <br>");
+        document.write("<b> Time Formula: </b> Distance / Speed <br><br>");
+        document.write("> Speed 1: " + speed_1 + "<br>");
+        document.write("> Time 1: " + time_1 + "<br>");
+        document.write("<b> Distance 1: </b>" + distance_1 + "<br><br>");
+        document.write("> Speed 2: " + speed_2 + "<br>");
+        document.write("> Time 2: " + time_2 + "<br>");
+        document.write("<b> Distance 2: </b>" + distance_2 + "<br><br>");
+        document.write("> Speed 3: " + speed_3 + "<br>");
+        document.write("> Time 3: " + time_3 + "<br>");
+        document.write("<b> Distance 3: </b>" + distance_3 + "<br><br>");
+        document.write("<b> Total Distance Traveled: </b>" + total_distance + " km" + "<br>");
+        document.write("<b> Total Time Spent: </b>" + total_time + " hours" + "<br>");
+      </script>
+    </section>
+
+    <!-- Question 8 -->  
+    <section class="question">
+      <h1>
+        8. Enhanced Game Scoring System
+      </h1>
+      <hr>
+      <h2>
+        You begin with a score of 800. For every level completed (7 levels total), you gain 150
+        points and lose 30 points for penalties. Additionally, if you reach a score of 1200, you
+        receive a bonus of 100 points. What will your final score be after all levels are
+        completed?
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var initialScore = 800;
+        var totalLevels = 7;
+        var pointsPerLevel = 150;
+        var penaltyPerLevel = 30;
+        var bonusScore = 100;
+        var finalScore = initialScore; 
+        document.write("<b> Level 1 Score Formula: </b><br> Initial Score + Points per Level - Penalty per Level <br><br>")
+        document.write("<b> Scores for Levels 2-7 Formula: </b><br> Score from Previous Level + Points per Level - Penalty per Level <br><br>")
+        for (var i = 1; i <= totalLevels; i++) {
+            finalScore = (finalScore + pointsPerLevel) - penaltyPerLevel;
+            document.write("Level " + i + " Score: " + finalScore + "<br>");
+            if (finalScore >= 1200){
+              finalScore += bonusScore;
+              bonusScore = 0;
+            }
+        }
+        document.write("<br><b> Final Score: </b>" + finalScore);
+      </script>
+    </section>
+
+    <!-- Question 9 -->  
+    <section class="question">
+      <h1>
+        9. Comparative Age Analysis
+      </h1>
+      <hr>
+      <h2>
+        Given the ages: age1 = 25, age2 = 30, age3 = 22, and age4 = 29, determine which person
+        is the oldest and how much older they are than the others. Use comparison operators to
+        assess the differences and log appropriate messages for each comparison.
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+        var age1 = 25;
+        var age2 = 30;
+        var age3 = 22;
+        var age4 = 29;
+        var oldest = Math.max(age1, age2, age3, age4);
+        document.write("Age 1: " + age1 + "<br>");
+        document.write("Age 2: " + age2 + "<br>");
+        document.write("Age 3: " + age3 + "<br>");
+        document.write("Age 4: " + age4 + "<br><br>");
+        document.write("<b>The oldest person is " + oldest + " years old.<br>");
+          if (oldest > age1) {
+            document.write("They are " + (oldest - age1) + " years older than age1 (" + age1 + ").<br>");
+          }
+          if (oldest > age2) {
+            document.write("They are " + (oldest - age2) + " years older than age2 (" + age2 + ").<br>");
+          }
+          if (oldest > age3) {
+            document.write("They are " + (oldest - age3) + " years older than age3 (" + age3 + ").<br>");
+          }
+          if (oldest > age4) {
+            document.write("They are " + (oldest - age4) + " year older than age4 (" + age4 + ").<b>");
+          }
+      </script>
+    </section>
+
+    <!-- Question 10 -->  
+    <section class="question">
+      <h1>
+        10. Dynamic Countdown Timer with Complex Conditions
+      </h1>
+      <hr>
+      <h2>
+        Starting with a count of 50, log the current count and decrement it. If the count is
+        divisible by 5, you double the count before logging it. If the count is odd, subtract 1.
+        How many times will you log a value before reaching 0, and what values will be logged
+        during the countdown?
+
+      </h2>
+      <p>
+        <br>
+      </p>
+      <h1>
+        Answer:
+      </h1>
+      <script>
+
+      </script>
+    </section>
+
+  </body>
+</html>

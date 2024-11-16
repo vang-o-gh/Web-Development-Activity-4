@@ -1,0 +1,66 @@
+/* Font-face declarations */
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url(fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url(fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url(fonts/NeueMontreal-Light.otf);
+}
+
+body{
+  background: linear-gradient(90deg, #38EF7D, #9FFCEA);
+  margin: 100px 100px 100px 100px;
+}
+
+h1{
+  color: #FCFCFC;
+  background: linear-gradient(90deg, #38EF7D, #9FFCEA);
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'NeueMontreal-Bold';
+}
+
+h2{
+  font-family: 'NeueMontreal-Light';
+  font-size: 15px;
+  text-align: justify;
+}
+
+p{
+  height: 0;
+}
+
+.banner{
+  background: rgba(22, 29, 45);
+  backdrop-filter: blur(100px);
+  color: #FCFCFC;
+  border-style: solid;
+  border-width: 5px;
+  width: auto;
+  border-radius: 20px;
+  font-family: 'NeueMontreal-Regular';
+  letter-spacing: 1px;
+  padding: 20px 50px 40px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.question{
+  background: rgba(22, 29, 45);
+  backdrop-filter: blur(100px);
+  color: #FCFCFC;
+  width: auto;
+  border-radius: 20px;
+  font-family: 'NeueMontreal-Regular';
+  letter-spacing: 1px;
+  padding: 20px 50px 40px 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
