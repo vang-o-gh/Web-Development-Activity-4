@@ -64,3 +64,12 @@ p{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  body{
+    margin: 20px 20px 20px 20px;
+  }
+
+}

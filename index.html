@@ -342,7 +342,28 @@
         Answer:
       </h1>
       <script>
+        let count = 50;
+        let logCount = 0;
+        const logLimit = 100; // Set a limit to the number of logs
 
+        while (count > 0 && logCount < logLimit) {
+            // Log the current count before any changes
+            console.log(count);
+            logCount++;
+
+            // Double the count if it is divisible by 5
+            if (count % 5 === 0) {
+                count *= 2;
+            } else if (count % 2 !== 0) {
+                // Subtract 1 if the count is odd
+                count -= 1;
+            } else {
+                // Decrease the count by 1 in any other case
+                count--;
+            }
+        }
+
+        document.write("Total number of times values were logged: " + logCount);
       </script>
     </section>
 
