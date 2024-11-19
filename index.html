@@ -317,7 +317,7 @@
             document.write("They are " + (oldest - age3) + " years older than age3 (" + age3 + ").<br>");
           }
           if (oldest > age4) {
-            document.write("They are " + (oldest - age4) + " year older than age4 (" + age4 + ").<b>");
+            document.write("They are " + (oldest - age4) + " year older than age4 (" + age4 + ").</b>");
           }
       </script>
     </section>
@@ -344,26 +344,24 @@
       <script>
         let count = 50;
         let logCount = 0;
-        const logLimit = 100; // Set a limit to the number of logs
-
+        const logLimit = 100; 
+        document.write("Count: " + count + "<br>")
+        document.write("Log Count: " + logCount + "<br>")
+        document.write("Log Limit: " + logLimit + " (Added limit to avoid the website to crash) <br><br>")
         while (count > 0 && logCount < logLimit) {
-            // Log the current count before any changes
             console.log(count);
             logCount++;
-
-            // Double the count if it is divisible by 5
             if (count % 5 === 0) {
                 count *= 2;
             } else if (count % 2 !== 0) {
-                // Subtract 1 if the count is odd
                 count -= 1;
             } else {
-                // Decrease the count by 1 in any other case
                 count--;
             }
         }
+        document.write("<b> Total number of times values were logged: </b>" + logCount + "<br><br>");
+        document.write("<i> Explanation: Because doubling count while it is divisible by 5 causes the number to become larger rather than lower, the code can still approach zero, but it does so very slowly. The website may freeze as a result of the loop running too frequently. Fixing the doubling by halving or subtracting makes it simpler for the countdown to approach zero rapidly, but adding a logLimit helps halt the loop after a certain point.</i>")
 
-        document.write("Total number of times values were logged: " + logCount);
       </script>
     </section>
 
